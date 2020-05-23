@@ -14,30 +14,32 @@
         android:text="LOG IN"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/layout1"
+        app:layout_constraintBottom_toTopOf="@+id/layout1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/layout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal|center_vertical"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/logintitle"
+        app:layout_constrainedHeight="false"
+        app:layout_constraintBottom_toTopOf="@id/layout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/forgotpasswordview"
-        android:gravity="center_horizontal"
-        >
+        app:layout_constraintTop_toBottomOf="@id/logintitle"
+        app:layout_editor_absoluteX="20dp">
 
         <TextView
             android:id="@+id/usernameview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
+            android:gravity="center|center_horizontal|center_vertical"
             android:text="Username"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/username"
@@ -45,13 +47,15 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:ems="10"
+            android:gravity="center|center_horizontal|center_vertical"
             android:inputType="textPersonName"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/passwordview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal|center_vertical"
             android:text="Password"
             android:textSize="18sp" />
 
@@ -61,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
             android:ems="10"
+            android:gravity="center|center_horizontal|center_vertical"
             android:inputType="textPassword"
             android:textSize="18sp" />
 
@@ -68,32 +73,39 @@
             android:id="@+id/signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal|center_vertical"
             android:text="Sign In"
             android:textSize="18sp" />
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/forgotpasswordview"
+    <LinearLayout
+        android:id="@+id/layout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Forgot password"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/signup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layout1"
-        app:layout_constraintVertical_chainStyle="spread" />
-
-    <TextView
-        android:id="@+id/signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Do you have an account? Sign up now!"
-        android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/forgotpasswordview"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical"
+        app:layout_constrainedHeight="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout1">
+
+        <TextView
+            android:id="@+id/forgotpasswordview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Forgot password"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Do you have an account? Sign up now!"
+            android:textSize="18sp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
