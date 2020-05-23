@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/logintitle"
         android:layout_width="wrap_content"
@@ -13,20 +14,21 @@
         android:text="LOG IN"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/layout1"
-        />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569" />
 
     <LinearLayout
         android:id="@+id/layout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@id/forgotpasswordview"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintOfToptoBottom="@+id/logintitle"
-        app:layout_constraintStart_toStartOf="parent">
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="193dp">
 
         <TextView
             android:id="@+id/usernameview"
@@ -76,8 +78,8 @@
         android:layout_height="wrap_content"
         android:text="Forgot password"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/layout1"
-        app:layout_constraintBottom_toTopOf="@id/signup"/>
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="527dp" />
 
     <TextView
         android:id="@+id/signup"
@@ -85,7 +87,7 @@
         android:layout_height="wrap_content"
         android:text="Do you have an account? Sign up now!"
         android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/forgotpasswordview"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="578dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
