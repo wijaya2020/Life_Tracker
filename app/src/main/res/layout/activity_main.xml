@@ -76,8 +76,8 @@
         android:layout_height="wrap_content"
         android:text="Forgot password"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/layout1"
+        app:layout_constraintBottom_toTopOf="@id/signup"/>
 
     <TextView
         android:id="@+id/signup"
@@ -85,8 +85,6 @@
         android:layout_height="wrap_content"
         android:text="Do you have an account? Sign up now!"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/forgotpasswordview"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
