@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<font-family xmlns:android="http://schemas.android.com/apk/res/android">
-
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font
+        android:font="@font/notosanstc_black"
+        android:fontWeight="900"/>
+    <font
+        android:font="@font/notosanstc_bold"
+        android:fontWeight="700"
+        />
+    <font
+        android:font="@font/notosanstc_regular"
+        android:fontWeight="400"
+        android:fontStyle="normal"
+        />
+    <font
+        android:font="@font/notosanstc_light"
+        android:fontWeight="100"/>
 </font-family>
