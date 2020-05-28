@@ -128,4 +128,13 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="457dp" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="Wijaya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="158dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
